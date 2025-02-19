@@ -1,0 +1,260 @@
+* {
+    text-decoration: none !important;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(235, 237, 239);
+
+}
+
+.invalid-modal{
+    color:red;
+    font-size: 12px;
+}
+
+.shadow-inner {
+    box-shadow: inset 1px 1.5px 6px rgba(0, 0, 0, 0.2);
+}
+
+.fs-7 {
+    font-size: 14px;
+}
+
+.fs-8 {
+    font-size: 13px;
+}
+
+.fs-9 {
+    font-size: 12px
+}
+
+.navbar-brand {
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+    color: black;
+    font-weight: 700;
+}
+
+#search-box {
+    position: relative;
+    width: 220px;
+}
+
+#search-form {
+    height: 32px;
+    border-radius: 20px;
+    background-color: #ebeaea;
+    padding-right: 25px
+}
+
+#search-text {
+    font-size: 14px;
+    color: #ddd;
+    border-width: 0;
+    background: transparent;
+}
+
+#search-box input[type="text"] {
+    width: 90%;
+    padding: 7px 0 0px 20px;
+    color: #333;
+    outline: none;
+    font-size: 13px;
+}
+
+#search-box i {
+    font-size: 14px;
+}
+
+#search-button {
+    position: absolute;
+    padding: 3px;
+    height: 32px;
+    width: 50px;
+    font-size: 16px;
+    color: black;
+    border-width: 0;
+    background-color: #ebeaea;
+    border-radius: 0px 20px 20px 0px;
+    cursor: pointer;
+}
+
+.sidebar {
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    z-index: 99;
+    margin-left: 0;
+    transition: all 0.3s ease;
+
+}
+
+.sidebar.hidden {
+    margin-left: -212px;
+}
+
+.content {
+    margin-left: 212px;
+    padding: 25px;
+    transition: all 0.3s ease;
+}
+
+.sidebar.hidden~.content {
+    margin-left: 0;
+}
+
+.dropdown-menu[data-bs-popper] {
+    left: -30px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #C0BFBF;
+    font-size: 13px;
+}
+
+.sidebar .nav-link:focus,
+.sidebar .nav-link:hover {
+    background-color: #484848;
+    color: white;
+}
+
+.sidebar .nav-link a:hover,
+.sidebar .nav-link a:focus {
+    color: white;
+}
+
+.nav-link.sub-menu:hover,
+.nav-link.sub-menu:focus {
+    background-color: var(--bg-dark);
+}
+
+.data img {
+    border-radius: 50%;
+    margin: 13px;
+    width: 50px;
+    height: 50px;
+  }
+
+.profil-mobile {
+    padding: 0 15px;
+    display: none;
+}
+
+.card-dashboard .card-body {
+    padding: 20px 25px
+}
+
+.card-dashboard i {
+    font-size: 35px;
+    opacity: .75;
+    position: absolute;
+    right: 25px
+}
+
+.dataTables_paginate .pagination .paginate_button {
+    background: white;
+    color: black;
+    font-size: 12px;
+
+}
+.dataTables_paginate .pagination .paginate_button:not(.disabled,.active):hover a{
+    background: #f3f3f3;
+
+}
+
+.dataTables_paginate .pagination .paginate_button.disabled a{
+    color:grey
+
+}
+.dataTables_paginate .pagination .paginate_button.active a {
+    background: black;
+    color: white;
+    outline: black;
+
+}
+
+.paginate_button .page-link{
+    border: none!important;
+}
+
+.dataTables_paginate .pagination .paginate_button a {
+    background: white;
+    color: black;
+    font-size: 12px;
+
+}
+
+.dataTables_paginate .pagination .paginate_button.active a:hover {
+    color: white;
+}
+
+table a {
+    color: #566787;
+}
+
+table a:hover {
+    color: #2196F3;
+}
+
+@media (max-width: 767.98px) {
+    .btn-toggle-sidebar {
+        position: absolute;
+        right: 60px;
+        top: 0.5rem;
+
+    }
+
+    #search-box {
+        margin-right: 0 !important;
+        width: 100%;
+        margin: 20px 0 10px 0;
+    }
+
+    #search-box input[type="text"] {
+        width: 95%;
+    }
+
+    .navbar-nav .nav-item {
+        width: 100%;
+        display: flex;
+        align-items: center
+    }
+
+    .navbar-nav .nav-item:nth-child(2) {
+        display: none
+    }
+
+    .content {
+        margin-left: 0;
+    }
+
+    .profil-mobile {
+        padding: 0 15px;
+        display: block;
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+        display: none;
+        z-index: 98;
+    }
+
+    .overlay.show {
+        display: block;
+    }
+
+    body:has(.overlay.show) {
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 575.98px) {}
